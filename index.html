@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatbot Widget Test</title>
+  </head>
+  <body>
+    <h1>Testing Chatbot Widget</h1>
+
+    <!-- Load your widget script -->
+    <script src="./widget.js"></script>
+
+    <!-- Initialize with test values -->
+    <script>
+      ChatbotWidget.init({
+        apiUrl: "http://localhost:8000/v1/qna",  
+        companyUuid: "alankulama123456",
+        type: "customer_agent",
+        primaryColor: "#ff5722",
+      });
+    </script>
+  </body>
+</html>
